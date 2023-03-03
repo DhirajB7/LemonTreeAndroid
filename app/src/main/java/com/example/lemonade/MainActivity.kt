@@ -19,7 +19,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.lemonade.ui.theme.LemonadeTheme
-import com.example.lemonade.ui.theme.Shapes
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +44,10 @@ fun LemonFunctionRunner() {
 @Composable
 fun LemonFunctionOnUI(modifier: Modifier = Modifier) {
 
+    var result = 1;
+
+    val DataID =
+
     Column(
         modifier
             .fillMaxSize()
@@ -59,7 +62,7 @@ fun LemonFunctionOnUI(modifier: Modifier = Modifier) {
         )
         Spacer(modifier.padding(20.dp))
         Image(
-            painter = painterResource(id = R.drawable.lemon_tree),
+            painter = painterResource(id = R.drawable.lemon_1),
             contentDescription = stringResource(R.string.tree),
             modifier
                 .clickable(onClick = { imageClicked(1) })
