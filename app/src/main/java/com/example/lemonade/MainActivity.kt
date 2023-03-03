@@ -19,6 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.lemonade.ui.theme.LemonadeTheme
+import com.example.lemonade.ui.theme.Shapes
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,7 +65,7 @@ fun LemonFunctionOnUI(modifier: Modifier = Modifier) {
                 .clickable(onClick = { imageClicked(1) })
                 .fillMaxWidth()
                 .wrapContentWidth(Alignment.CenterHorizontally)
-                .border(color = Color.Magenta, width = 2.dp)
+                .border(color = Color.Magenta, width = 4.dp)
         )
     }
 
